@@ -12,7 +12,7 @@ import javax.ejb.Startup;
 public class SimpleScheduler {
 
     @Schedule(hour = "*", minute = "*", second = "*/2", info = "Every 2 seconds timer")
-    public void scheduledTAsk() {
+    public void scheduledTask() {
         log.info("Hello scheduled world!");
     }
 }
